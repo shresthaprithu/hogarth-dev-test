@@ -86,3 +86,33 @@
 		background-image: url("/images/final-frontier_small_2x.jpg");
 	}
 }
+
+.timeline-list {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fill, 540px);
+	align-items: flex-start;
+	grid-auto-rows: minmax(15px, auto);
+}
+
+.timeline-list .timeline-item {
+	margin: 0;
+}
+.timeline-1 {
+	grid-row-end: span 14;
+}
+.timeline-2 {
+	grid-row-end: span 20;
+}
+.timeline-3 {
+	grid-row-end: span 19;
+}
+.timeline-4 {
+	grid-row-end: span 15;
+}
+.timeline-5 {
+	grid-row-end: span 20;
+}
+.timeline-6 {
+	grid-row-end: span 17;
+}
