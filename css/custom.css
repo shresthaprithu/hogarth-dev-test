@@ -160,3 +160,22 @@
 		background-image: url("/images/final-frontier_small_2x.jpg");
 	}
 }
+
+/* exercise three- autoprefixer is not applied to exercise 3 */
+.gallery-grid {
+	display: flex;
+	flex-wrap: wrap;
+	grid-template-columns: none;
+}
+@media only screen and (min-width: 737px) {
+	.grid-third.grid-left,
+	.grid-third.grid-right {
+		width: 33.33%;
+		grid-column: auto;
+	}
+	.grid-two-third.grid-left,
+	.grid-two-third.grid-right {
+		width: 66.67%;
+		grid-column: auto;
+	}
+}
