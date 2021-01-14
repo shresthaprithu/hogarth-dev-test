@@ -1,0 +1,88 @@
+/* added new space frontier hero image */
+
+/* absolute link- preserve standard markup */
+.unit-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+}
+.hero-unit-wrap {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.hero-unit-space-frontier .hero-image,
+.hero-unit-moon-exploration .hero-image {
+	width: auto;
+	background-size: auto 960px;
+	background-position: center top;
+}
+.hero-unit-space-frontier .hero-image {
+	height: 960px;
+	margin: 0 auto;
+	background-image: url(/images/final-frontier_large.jpg);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1068px) {
+	.hero-unit-space-frontier .hero-image,
+	.hero-unit-moon-exploration .hero-image {
+		height: 712px;
+		background-size: auto 712px;
+	}
+
+	.hero-unit-space-frontier .hero-image {
+		background-image: url(/images/final-frontier_medium.jpg);
+	}
+}
+
+@media only screen and (max-width: 735px) {
+	.hero-unit-wrap {
+		flex-wrap: wrap;
+	}
+	.hero-unit-space-frontier,
+	.hero-unit-moon-exploration {
+		width: 100%;
+	}
+	.hero-copy {
+		width: 345px;
+	}
+	.hero-unit-space-frontier .hero-image,
+	.hero-unit-moon-exploration .hero-image {
+		height: 490px;
+		background-size: auto 490px;
+	}
+
+	.hero-unit-space-frontier .hero-image {
+		background-image: url(/images/final-frontier_small.jpg);
+	}
+}
+
+/* retina media queries for additional hero unit */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 1.5dppx),
+	(-webkit-min-device-pixel-ratio: 1.5),
+	(min-resolution: 144dpi) {
+	.hero-unit-space-frontier .hero-image {
+		background-image: url("/images/final-frontier_large_2x.jpg");
+	}
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+	only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+	.hero-unit-space-frontier .hero-image {
+		background-image: url("/images/final-frontier_medium_2x.jpg");
+	}
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+	only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+	.hero-unit-space-frontier .hero-image {
+		background-image: url("/images/final-frontier_small_2x.jpg");
+	}
+}
